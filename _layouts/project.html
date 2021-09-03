@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  
+    {%- include head.html -%}
+  
+    <body>
+    
+        {%- include header.html -%}
+    
+        <main>
+            
+            <div class="project_nest_1">
+                <h1> {{ page.title }} </h1>
+                <div class="project_nest_2">
+                    {% if page.event != null or page.place-time != null %}
+                    <p class="project_event-location">
+                        <span class="bold"> {{ page.event }} </span><br>
+                        <span class="italic"> {{ page.place-time }} </span>
+                    </p>
+                    {% endif %}
+                    <p> {{ page.preview }} </p>
+                </div>  
+            </div>
+          
+			<h2 class="project_overview_header">Overview</h2>
+            <div class="project_content">
+                <div class="project_content_grid_1"> {{ page.excerpt }} </div>     <!--- About, Features, Link --->
+              
+                <div class="project_content_grid_2">    <!--- Technologies Used --->
+                
+                <div class="project_content_grid_2_content">
+                
+                    <h3>Technologies</h3>
+                    <ul>
+                        {% if page.language != null %}             
+                        <li>Languages
+                            <ul>
+                                {% for item in page.language %}
+                                    <li> {{ item }} </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                      
+                        {% if page.software != null %}             
+                        <li>Libraries / Frameworks / etc
+                            <ul>
+                                {% for item in page.software %}
+                                    <li> {{ item }} </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                      
+                        {% if page.hardware != null %}             
+                        <li>Hardware
+                            <ul>
+                                {% for item in page.hardware %}
+                                    <li> {{ item }} </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    
+                    </div>
+                    
+                </div>
+                
+                <div class="project_content_grid_3"> {{ page.content | remove: page.excerpt }} </div>       <!--- Images and extra --->
+          </div>    <!--- project_content --->
+        </main>
+        
+        <button class="scrollToTopBtn"><i class="fa fa-rocket fa-rotate-315 fa-2x" aria-hidden="true"></i></button>
+        {%- include footer_script.html -%}
+        
+        {%- include footer.html -%}
+    
+  </body>
+</html>

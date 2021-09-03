@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+    {%- include head.html -%}
+	
+    <body>
+    
+        {%- include header.html -%}
+        
+        <main>
+            <div class="about_me">
+                <h1 class="about_me_header">About Me</h1>
+                
+                {{ content }}
+                
+                <p class="bold more_content_spacing">Email: <a href='mailto:mailto:an.hueya@gmail.com?subject=Website Inquiry'>an.hueya@gmail.com</a></p>
+                <p class="bold">GitHub: <a href='https://github.com/AHueya'>https://github.com/AHueya</a></p>
+                <a href='{{ site.resume_path }}' class="button"><i class="fa fa-download fa-lg" aria-hidden="true"></i>&emsp;Download Resume</a>
+            </div>
+                
+            <div class="resume_content">
+                <div class="resume_content_grid_1">
+                    <h2>Education</h2>
+                    <div class="date_right_align">
+                        <span>
+                            <h3>{{ page.college }}</h3>
+                            <p>{{ page.degree }}</p>
+                        </span>
+                        <p>{{ page.college-date }}</p>
+                    </div>
+                </div>
+                
+                <div class="resume_content_grid_2">
+                    <h2>Technical Skills</h2>
+                    
+                    <h3>Software</h3>
+                    <ul>
+                        {% for item in page.software %}
+                            <li> {{ item }} </li>
+                        {% endfor %}
+                    </ul>
+                    
+                    <h3 class="content_spacing">Language</h3>
+                    <ul>
+                        {% for item in page.language %}
+                            <li> {{ item }} </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="resume_content_grid_3">
+                    <h2>Experience</h2>
+                    <ul class="content_list">
+                        {% for experience in page.experience %}
+                            <li>
+                                <div class="date_right_align">
+                                <span>
+                                    <h3> {{ experience.employer }} </h3>
+                                    <p> {{ experience.job-title }} </p>
+                                </span>
+                                <p> {{ experience.duration }} </p>
+                                </div>
+                                
+                                <ul>
+                                    {% for item in experience.duties %}
+                                        <li> {{ item }} </li>
+                                    {% endfor %}
+                                </ul>
+                                
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            
+            </div>
+        </main>
+        
+        <button class="scrollToTopBtn"><i class="fa fa-rocket fa-rotate-315 fa-2x" aria-hidden="true"></i></button>
+        {%- include footer_script.html -%}
+        
+        {%- include footer.html -%}
+    </body>
+
+</html>

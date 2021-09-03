@@ -1,0 +1,15 @@
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='../assets/images/favicon.ico' />
+  
+    <!-- Display only name on the title -->
+    {% assign myTitle = site.name | remove: " " %}
+    {% if page.title != null %}
+        {% assign tempTitle = " - " | append: page.title %}
+    {% endif %}
+  
+    <title> {{ myTitle | append: tempTitle }} </title>
+  
+</head>

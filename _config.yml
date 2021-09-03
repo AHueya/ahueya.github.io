@@ -1,0 +1,19 @@
+#Info
+name: Andersen Huey
+email: an.hueya@gmail.com
+profile_image: assets/images/profile_img.png
+profile_image_alt: Andersen Huey profile image
+resume_path: assets/files/AndersenHuey_Resume.pdf
+
+#Social
+github_username: ahueya
+linkedin_url: andersen-huey
+
+
+#Site configuration content
+collections_dir: content
+collections:
+  projects:
+    output: true
+
+excerpt_separator: <!--more-->
