@@ -23,6 +23,9 @@ footer {
     margin: auto;
 }
 
+a {
+    color: blue;
+}
 
 img {
     max-width: 75%;
