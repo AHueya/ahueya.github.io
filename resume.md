@@ -5,7 +5,7 @@ title: Resume
 #Education
 college: California State University, Sacramento
 degree: Bachelor of Science, Computer Engineering
-college-date: Fall 2016 - Fall 2020
+college-date: 2016 - 2020
 
 #Technical Skills
 language:
