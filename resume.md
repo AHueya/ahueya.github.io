@@ -25,7 +25,7 @@ software:
 #Experience (New entries on top)
 experience: 
     - employer: California Victim Compensation Board (via University Enterprises, Inc.)
-      job-title: Student Assistant
+      job-title: IT Student Assistant
       duration: July 2019 - April 2021
       duties: 
         - Managed content and functionality as Webmaster for both production and intranet websites
