@@ -25,7 +25,7 @@ preview: >
 
 EcoSense is a smart device designed to efficiently water your lawn. The project was developed for the UC Davis annual
 Hackathon, HackDavis 2018 under the environment category. The intent of the design is to tackle an aspect of California’s
-reoccurring drought issue by providing homeowners a water saving, hands-off approach to lawncare.  
+reoccurring drought issue by providing homeowners a water saving, hands-off approach to lawn care.  
 
 Comparing existing irrigation technology, most homes use a system consisting of a controller and a timer that will
 regularly water lawns regardless of temperature or weather forecast. The purpose of EcoSense is to prevent that scenario
@@ -33,7 +33,7 @@ and take advantage of these natural events to efficiently maintain your lawn.
 
 Describing the project, EcoSense is a Raspberry Pi with connections to a camera and an external watering mechanism. The
 device works by capturing an image of the lawn and taking the average color to determine the state (e.g., green (healthy),
-yellow (unhealth), etc.). This information is combined with local weather forecast found using ZIP code inputted into
+yellow (unhealthy), etc.). This information is combined with local weather forecast found using ZIP code inputted into
 Weather Underground’s API to decide if the watering mechanism must be activated.
 
 Because of the nature of Hackathons, the time to conceptualize, plan, and develop was extremely short. Thus, the project
