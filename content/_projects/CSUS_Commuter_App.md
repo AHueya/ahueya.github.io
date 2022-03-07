@@ -19,7 +19,7 @@ software:
 preview: >
     The CSUS Commuter App is a web-based application that is intended to help Sacramento
     State commuters and visitors determine the best means of transportation when
-    considering money, time, and Sustainability. The application uses a survey to collect
+    considering money, time, and sustainability. The application uses a survey to collect
     users' travel preferences and data which are then processed to provide them with a
     list of recommended transportation methods in accordance with their needs and values.
 ---
