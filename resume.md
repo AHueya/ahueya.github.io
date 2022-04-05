@@ -12,12 +12,14 @@ language:
     - HTML
     - CSS
     - Java
-    - Python
     - C
-    - Verilog
+    - Python
     - JavaScript
+    - Verilog
+    - SQL
 
 software:
+    - Microsoft Office
     - Adobe Dreamweaver
     - Adobe Photoshop
     - Microsoft Visio
@@ -29,11 +31,11 @@ experience:
       job-title: IT Student Assistant
       duration: July 2019 - April 2021
       duties: 
-        - Managed content and functionality as interim Webmaster for both production, intranet, and extranet websites
+        - Managed content and functionality as interim Webmaster for intranet, extranet, and internet websites
         - Administrative duties managing user accounts within in-house applications
         - Assisted with the deployment and maintenance of hardware such as desktops, telephones, printers, and fax machines
         - Provided helpdesk support to users via telephone, in-person, and Track-It! ticketing system
-        - Drafted and proofread PDF forms and documentation for accessibility
+        - Drafted and proofread PDF forms and documentation for accessibility according to WCAG
 
 ---
 
