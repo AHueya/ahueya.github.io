@@ -14,7 +14,6 @@ language:
 
 software:
     - Jquery
-    - Ajax
     - Flask-SocketIO
 
 hardware:
@@ -44,17 +43,17 @@ In terms of the device itself, the working prototype consists of a WiFi remote-c
 camera and a multitude of sensors that will regularly measure the surrounding temperature, humidity, and particulate matter.
 These devices along with other hardware such as motors are connected to a Raspberry Pi 3 which acts as the central unit
 tying everything together. Additionally, the Raspberry Pi was essential for computing and parsing data which was then
-stored in a CSV file and transmitted to the user in near real-time via Web UI.
+stored in a CSV file and transmitted to the user in near real-time via Web user interface.
 
 
 #### My Contribution
 
-Due to the nature of the Senior Design Course the project was completed in collaboration with three other individuals. My role
-in this project was geared more towards software where I spent most of my time developing the underlying system. For
-instance, a critical part that I developed was the Flask-SocketIO server that served as the foundation for the remote feature
-of the rover. This goes hand in hand with another feature that I developed which was the Web UI that's responsible for providing
-visual feedback through the camera and a near real-time stream of sensor data. This was accomplished with the use of Ajax so that
-the sensor values could be updated without having to refresh the entire page.
+Due to the nature of the Senior Design Course, the project was completed in collaboration with three other individuals. My role
+in this project was geared more towards software, where I spent most of my time developing the frontend and backend systems. For
+instance, in terms of backend, a critical part that I developed was the Python web server built using Flask-SocketIO. Because of
+the need for near real-time data transfer, Flask-SocketIO allows access to the WebSocket protocol that makes low-latency
+bidirectional client-server communication possible. As for frontend, I also developed the web UI using HTML, CSS, and Jquery that's
+responsible for providing access to live camera feed and sensor data through asynchronous page updates.
 
 
 ### Features
